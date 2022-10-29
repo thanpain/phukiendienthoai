@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phụ kiện điện tử</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/logo_title/logo-title.png" type="icon/image">
+    <link rel="stylesheet" href="./image-icon/themify-icons/themify-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo_web/akatsuki.png" alt="" width="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#" title="Trang chủ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                                <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+                            </svg>
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#" title="Liên hệ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                            </svg>
+                            Liên hệ
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" title="Danh mục" href="#danhmuc" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Danh mục
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#dienthoai" title="Điện thoại">Điện thoại</a></li>
+                            <li><a class="dropdown-item" href="#laptop" title="Laptop">Laptop</a></li>
+                            <li><a class="dropdown-item" href="#maytinhbang" title="Máy tính bảng">Máy tính bảng</a></li>
+                            <li><a class="dropdown-item" href="#phukien" title="Phụ kiện">Phụ kiện</a></li>
+                            <li><a class="dropdown-item" href="#sacduphong" title="Sạc dự phòng">Sạc dự phòng</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#" title="Tin tức công nghệ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
+                                <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+                                <path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+                            </svg>
+                            Tin tức công nghệ
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <div class="btn btn-outline-light ms-2 mobile-login" onclick="document.getElementById('id01').style.display='block'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- form login -->
+    <div id="id01" class="modal">
+        <form class="modal-content animate mt-5" action="/action_page.php" method="post" style="width: 70%; height: auto; margin-left: auto; margin-right: auto;">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="./img/img-sanpham/img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <button type="submit" class="login mt-2">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" class="mt-2"> Remember me
+                </label>
+                <a href="#!" class="d-flex justify-content-end">Đăng kí tài khoản</a>
+            </div>
+            <div class="container mt-4 p-4" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+    <!-- slide -->
+    <div class="container mt-5">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel" style="margin-top: 5rem;">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner  shadow mb-4 bg-light">
+                <div class="carousel-item active">
+                    <img src="./img/slide/slide-1.png" alt="Los Angeles" class="d-block" style="width:100%; border-radius: 10px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slide/slide-2.png" alt="Chicago" class="d-block" style="width:100%; border-radius: 10px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slide/slide-3.png" alt="New York" class="d-block" style="width:100%; border-radius: 10px;">
+                </div>
+            </div>
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <h2>Danh mục sản phẩm</h2>
+        <!-- sản phẩm -->
+        <div class="row">
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Giá đỡ Laptop</h5>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="bo-gach-chan">
+                            <img src="./img/img-sanpham/sanpham-1.jpg" title="Giá đỡ laptop" alt="" width="100%">
+                            <p style="color: black;"><b>200.000</b> đ</p>
+                        </a>
+                        <p class="gach-ngang" style="color: black;">220.000 đ</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-danger">Đặt hàng ngay</button>
+                    </div>
+                    <div class="gg">
+                        <p class="giam-gia">Giảm 10%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Sạc nhanh 20W Apple</h5>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="bo-gach-chan">
+                            <img src="./img/img-sanpham/sac-nhanh.png" alt="" width="100%">
+                            <p style="color: black;"><b>668.000</b> đ</p>
+                        </a>
+                        <p class="gach-ngang" style="color: black;">680.000 đ</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-danger">Đặt hàng ngay</button>
+                    </div>
+                    <div class="gg">
+                        <p class="giam-gia">Giảm 10%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Ốp lưng iPhone 11 siêu dẻo</h5>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="bo-gach-chan">
+                            <img src="./img/img-sanpham/op-lung.jpg" title="Ốp lưng iphone 11" alt="" width="100%">
+                            <p style="color: black;"><b>79.000</b> đ</p>
+                        </a>
+                        <p class="gach-ngang" style="color: black;">90.000 đ</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-danger">Đặt hàng ngay</button>
+                    </div>
+                    <div class="gg">
+                        <p class="giam-gia">Giảm 10%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Miếng dán Laptop</h5>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="bo-gach-chan">
+                            <img src="./img/img-sanpham/mieng-dan-laptop.jpg" alt="" width="100%">
+                            <p style="color: black;"><b>860.000</b> đ</p>
+                        </a>
+                        <p class="gach-ngang" style="color: black;">880.000 đ</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-danger">Đặt hàng ngay</button>
+                    </div>
+                    <div class="gg">
+                        <p class="giam-gia">Giảm 10%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Cáp sạc USB</h5>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="bo-gach-chan">
+                            <img src="./img/img-sanpham/cap-sac.jpeg" alt="" width="100%">
+                            <p style="color: black;"><b>189.000</b> đ</p>
+                        </a>
+                        <p class="gach-ngang" style="color: black;">200.000 đ</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-danger">Đặt hàng ngay</button>
+                    </div>
+                    <div class="gg">
+                        <p class="giam-gia">Giảm 10%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <div class="card-header" id="sacduphong">
+                        <h5>Pin sạc dự phòng</h5>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="bo-gach-chan">
+                            <img src="./img/img-sanpham/pin-du-phong.jpg" alt="" width="100%">
+                            <p style="color: black;"><b>495.000</b> đ</p>
+                        </a>
+                        <p class="gach-ngang" style="color: black;">515.000 đ</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-danger">Đặt hàng ngay</button>
+                    </div>
+                    <div class="gg">
+                        <p class="giam-gia">Giảm 10%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Loa Bluetooth</h5>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="bo-gach-chan">
+                            <img src="./img/img-sanpham/loa-bluetooth.jpg" alt="" width="100%">
+                            <p style="color: black;"><b>279.000</b> đ</p>
+                        </a>
+                        <p class="gach-ngang" style="color: black;">290.000 đ</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-danger">Đặt hàng ngay</button>
+                    </div>
+                    <div class="gg">
+                        <p class="giam-gia">Giảm 10%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Bàn phím Bluetooth</h5>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="bo-gach-chan">
+                            <img src="./img/img-sanpham/ban-phim.jpg" alt="" width="100%">
+                            <p style="color: black;"><b>360.000</b> đ</p>
+                        </a>
+                        <p class="gach-ngang" style="color: black;">375.000 đ</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-danger">Đặt hàng ngay</button>
+                    </div>
+                    <div class="gg">
+                        <p class="giam-gia">Giảm 10%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 text-center">
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#mymodal">
+                Xem thêm sản phẩm
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+        </div>
+        <h2 class="mt-4">Hàng hot 2022</h2>
+        <div class="row">
+            <div class="col-md-2 mt-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Nguồn Adapter 12V5A</h5>
+                    </div>
+                    <div class="card-body">
+                        <a href="#!" class="bo-gach-chan">
+                            <img src="./img/img-sanpham/12v5a_a_thumb.jpg" alt="" title="Nguồn Adapter 12V5A" width="100%">
+                            <p style="color: black;"><b>99.000</b> đ</p>
+                        </a>
+                        <p class="gach-ngang" style="color: black;">110.000 đ</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-danger">Đặt hàng ngày</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mt-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Camera hành trình K10</h5>
+                    </div>
+                    <div class="card-body">
+                        <a href="#!" class="bo-gach-chan">
+                            <img src="./img/img-sanpham/camera.jpg" alt="" title="Camera hành trình" width="100%">
+                            <p style="color: black;"><b>250.000</b> đ</p>
+                        </a>
+                        <p class="gach-ngang" style="color: black;">265.000 đ</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-danger">Đặt hàng ngày</button>
+                    </div>
+                    <div class="gg">
+                        <p class="giam-gia">Giảm 10%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mt-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Webcam Full HD 1080P</h5>
+                    </div>
+                    <div class="card-body">
+                        <a href="#!" class="bo-gach-chan">
+                            <img src="./img/img-sanpham/webcam.jpg" alt="" title="Webcam Full HD" width="100%">
+                            <p style="color: black;"><b>620.000</b> đ</p>
+                        </a>
+                        <p class="gach-ngang" style="color: black;">1.090.000 đ</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-danger">Đặt hàng ngày</button>
+                    </div>
+                    <div class="gg">
+                        <p class="giam-gia">Giảm 43%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mt-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Tai nghe không dây Xiaomi</h5>
+                    </div>
+                    <div class="card-body">
+                        <a href="#!" class="bo-gach-chan">
+                            <img src="./img/img-sanpham/tai-nghe.png" alt="" title="Tai nghe không dây" width="100%">
+                            <p style="color: black;"><b>1.590.000</b> đ</p>
+                        </a>
+                        <p class="gach-ngang" style="color: black;">2.690.000 đ</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-danger">Đặt hàng ngày</button>
+                    </div>
+                    <div class="gg">
+                        <p class="giam-gia">Giảm 41%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mt-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Màn hình Gaming LG UTG</h5>
+                    </div>
+                    <div class="card-body">
+                        <a href="#!" class="bo-gach-chan">
+                            <img src="./img/img-sanpham/man-hinh-lg-24-inch-24mp400-1.jpg" alt="" title="Màn hình Gaming LG" width="100%">
+                            <p style="color: black;"><b>7.290.000</b> đ</p>
+                        </a>
+                        <p class="gach-ngang" style="color: black;">8.990.000 đ</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-danger">Đặt hàng ngày</button>
+                    </div>
+                    <div class="gg">
+                        <p class="giam-gia">Giảm 19%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mt-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Tai nghe chụp tai Gaming</h5>
+                    </div>
+                    <div class="card-body">
+                        <a href="#!" class="bo-gach-chan">
+                            <img src="./img/img-sanpham/gaming-havit-hv-h2232d_1_1.jpg" alt="" title="Tai nghe chụp tai Soul Ultra Dynamic" width="100%">
+                            <p style="color: black;"><b>350.000</b> đ</p>
+                        </a>
+                        <p class="gach-ngang" style="color: black;">790.000 đ</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-danger">Đặt hàng ngày</button>
+                    </div>
+                    <div class="gg">
+                        <p class="giam-gia">Giảm 56%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hỏi đáp -->
+        <div class="row mt-4">
+            <div class="col-md-8 mt-3">
+                <div class="card p-3" style="background-color: rgba(204, 204, 204, 0.275);">
+                    <h5>Phản hồi sản phẩm</h5>
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                            <textarea class="form-control shadow p-3" id="exampleFormControlTextarea1" rows="5" placeholder="Phản hồi về sản phẩm của bạn"></textarea>
+                            <a href="#!">
+                                <input type="submit" value="Submit" class="mt-4 btn btn-primary" required>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card p-2">
+                    <div class="card-body">
+                        <h5>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
+                                <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+                                <path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+                            </svg>
+                            Tin tức sản phẩm
+                        </h5>
+                        <div class="mt-4">
+                            <img src="./img/image-sanpham/tainghe.jpg" style="border-radius: 10px" alt="" width="80px" height="80px">
+                            <p class="para-1">
+                                <a href="#!" class="bo-gach-chan" style="color: black;">
+                                    Tai nghe Bluetooth là gì? Top 5 tai nghe Bluetooth pin trâu mà bạn nên lựa chọn
+                                </a>
+                            </p>
+                        </div>
+                        <div class="mt-4">
+                            <img src="./img/image-sanpham/tainghe-2.jpg" style="border-radius: 10px" alt="" width="80px" height="80px">
+                            <p class="para-1">
+                                <a href="#!" class="bo-gach-chan" style="color: black;">
+                                    Trên tai JBL Quantum TWS: chất âm sống động, có chống ồn, độ trễ cực thấp, tối ưu siêu tốt cho gaming
+                                </a>
+                            </p>
+                        </div>
+                        <div class="mt-4">
+                            <img src="./img/image-sanpham/tainghe-3.jpg" style="border-radius: 10px" alt="" width="80px" height="80px">
+                            <p class="para-1">
+                                <a href="#!" class="bo-gach-chan" style="color: black;">
+                                    Trên tay nhanh AirPods Pro 2022: Kén sạc mới với loa ngoài và lỗ móc khoá, củ tai nghe thiết kế không đổi...
+                                </a>
+                            </p>
+                        </div>
+                        <div class="mt-4">
+                            <img src="./img/image-sanpham/tainghe-4.jpg" style="border-radius: 10px" alt="" width="80px" height="80px">
+                            <p class="para-1">
+                                <a href="#!" class="bo-gach-chan" style="color: black;">
+                                    Loạt tai nghe Bluetooth giảm giá sốc, chỉ từ 200k là có thể sở hữu ngay một chiếc tai nghe xịn xò
+                                </a>
+                            </p>
+                        </div>
+                        <div class="mt-4">
+                            <img src="./img/image-sanpham/tainghe-5.jpg" style="border-radius: 10px" alt="" width="80px" height="80px">
+                            <p class="para-1">
+                                <a href="#!" class="bo-gach-chan" style="color: black;">
+                                    Chiếc tai nghe với thiết kế "cực dị" này sẽ giúp bạn xa lánh khỏi bụi mà vẫn feel nhạc chill chill
+                                </a>
+                            </p>
+                        </div>
+                        <div class="mt-4 text-center">
+                            <button type="button" class="btn btn-outline-danger shadow p-2 mb-2">
+                                Xem tất cả bài viết 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div class="modal fade" id="mymodal">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4>Thông báo</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Hiện tại các sản phẩm đang cập nhật... Đây chỉ là giao diện nên không có chức năng xử lý!</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <h4 class="modal-title"><b>Phụ kiện điện thoại</b> chính hãng giá rẻ uy tín. Cửa hàng hiện có hầu hết các loại phụ kiện cần thiết nhất cho thiết bị của quý vị như bao da, ốp lưng điện thoại iPhone, Samsung, miếng dán mặt kiếng, mặt lưng, pin sạc dự phòng, phụ kiện đồng hồ thông minh (Apple watch và smartwatch khác), phụ kiện laptop chính hãng, thiết bị nhà thông minh, phụ kiện ô tô, xe máy.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid mt-5">
+        <footer class="bg-light p-5 bg-light">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>HỖ TRỢ KHÁCH HÀNG</h5>
+                    <div class="footer-end" style="font-size: 14px">
+                        <p><a class="footer-bo-gach-chan" href="#!">Hướng dẫn mua hàng</a></p>
+                        <p><a class="footer-bo-gach-chan" href="#!">Quy định bảo hành</a></p>
+                        <p><a class="footer-bo-gach-chan" href="#!">Chính sách bảo mật thông tin</a></p>
+                        <p><a class="footer-bo-gach-chan" href="#!">Chính sách và hình thức thanh toán</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>THÔNG TIN HỖ TRỢ</h5>
+                    <div class="footer-end" style="font-size: 14px;">
+                        <p><a class="footer-bo-gach-chan" href="#!">Sản phẩm KHUYẾN MÃI</a></p>
+                        <p><a class="footer-bo-gach-chan" href="#!">Tất cả sản phẩm</a></p>
+                        <p><a class="footer-bo-gach-chan" href="#!">Liên hệ</a></p>
+                        <p><a class="footer-bo-gach-chan" href="#!">Blog - Tin tức</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>MẠNG XÃ HỘI</h5>
+                    <div class="footer-end" style="font-size: 14px;">
+                        <p><a class="footer-bo-gach-chan" href="#!">Hãy kết nối với chúng tôi</a></p>
+                        <a href="#!">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" style="color: #000;">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                        </a>
+                        <a href="#!">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16" style="color: #000;">
+                                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+                            </svg>
+                        </a>
+                        <a href="#!">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16" style="color:#000">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- on top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <a href="#facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-facebook myFb" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+        </svg>
+    </a>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
