@@ -131,6 +131,11 @@ img.avatar {
     margin-top: -83px;
     margin-left: 88px;
 }
+
+.card:hover {
+    padding: 10px;
+    transition: all .5s;
+}
   
 /* Add Zoom Animation */
 .animate {
